@@ -3,8 +3,6 @@ import st_pages
 from st_pages import show_pages_from_config, add_page_title,Page, Section, show_pages
 import numpy as np
 import pandas as pd
-import plotly.express as px
-import plotly.graph_objects as go
 from PIL import Image
 
 st.header('Score Prediction')
