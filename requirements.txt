@@ -1,0 +1,12 @@
+streamlit
+st_pages
+numpy
+pandas
+seaborn
+matplotlib
+bs4
+requests
+selenium
+urllib
+time
+csv
