@@ -27,8 +27,8 @@ show_pages(
 st.title('ESG rating')
 st.markdown('彭宁一 12012244  程民欣 12012238  赵远帆 12012809')
 
-df1 = pd.read_csv("C:\\Users\\16539\\Documents\\SUSTech\\COURSES\\2023-Spring\\多元\\input\\shares.csv")
-df2 = pd.read_excel("C:\\Users\\16539\\Documents\\SUSTech\\COURSES\\2023-Spring\\多元\\input\\ESG.xlsx")
+df1 = pd.read_csv(".\\input\\shares.csv")
+df2 = pd.read_excel(".\\input\\ESG.xlsx")
 df = df1.join(df2, on = 'id',how = 'inner',rsuffix = '_hh')
 
 df.set_index('id', inplace = True)
@@ -120,8 +120,8 @@ st.markdown('''We plotted a boxplot of the ESG scores for each dimension to see 
 scores.
 ''')
 
-df1 = pd.read_csv("C:\\Users\\16539\\Documents\\SUSTech\\COURSES\\2023-Spring\\多元\\input\\shares.csv")
-df2 = pd.read_excel("C:\\Users\\16539\\Documents\\SUSTech\\COURSES\\2023-Spring\\多元\\input\\ESG.xlsx")
+df1 = pd.read_csv(".\\input\\shares.csv")
+df2 = pd.read_excel(".\\input\\ESG.xlsx")
 df = df1.join(df2, on = 'id',how = 'inner',rsuffix = '_hh')
 
 df3 = df[['ESG管理实践得分\n[交易日期] 2023-05-11', 'ESG争议事件得分\n[交易日期] 2023-05-11', \
@@ -148,7 +148,7 @@ sub_rating = ['管理实践得分', '争议事件得分','环境维度得分', '
 # sns.pairplot(df[['最新价', '涨跌幅(%)','市现率', 'ROE', '负债率(%)','PE(动)', '净利润',"Wind ESG评级\n[交易日期] 2023-05-11"]], hue = "Wind ESG评级\n[交易日期] 2023-05-11")
 # st.pyplot(fig3)
 
-image = Image.open('c://Users//16539//Documents//SUSTech//COURSES//2023-Spring//多元//input//pairplot.png')
+image = Image.open('.//input//pairplot.png')
 st.image(image)
 
 
@@ -159,9 +159,9 @@ def zscore_normalize(data):
     return X_norm
 
 
-stock=pd.read_excel('C:\\Users\\16539\\Documents\\SUSTech\\COURSES\\2023-Spring\\多元\\input\\股票数据.xlsx')
-esg_wind_sz=pd.read_excel(r'C:\\Users\\16539\\Documents\\SUSTech\\COURSES\\2023-Spring\\多元\\input\\深股1.xlsx')
-esg_wind_sh=pd.read_excel(r'C:\\Users\\16539\\Documents\\SUSTech\\COURSES\\2023-Spring\\多元\\input\\上股1.xlsx')
+stock=pd.read_excel('.\\input\\股票数据.xlsx')
+esg_wind_sz=pd.read_excel(r'.\\input\\深股1.xlsx')
+esg_wind_sh=pd.read_excel(r'.\\input\\上股1.xlsx')
 
 #合并深股上股
 esg_wind=pd.concat([esg_wind_sz,esg_wind_sh],axis=0)
