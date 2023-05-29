@@ -25,8 +25,8 @@ show_pages(
 st.title('ESG rating')
 st.markdown('彭宁一 12012244  程民欣 12012238  赵远帆 12012809')
 
-df1 = pd.read_csv(".\\input\\shares.csv")
-df2 = pd.read_excel(".\\input\\ESG.xlsx")
+df1 = pd.read_csv(".//input//shares.csv")
+df2 = pd.read_excel(".//input//ESG.xlsx")
 df = df1.join(df2, on = 'id',how = 'inner',rsuffix = '_hh')
 
 df.set_index('id', inplace = True)
