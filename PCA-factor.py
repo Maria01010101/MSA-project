@@ -154,7 +154,7 @@ st.latex(r'''\begin{equation}
 \end{equation}''')
 
 
-image = Image.open('.//pca.png')
+image = Image.open('.//input//pca.png')
 st.image(image, caption='pca')
 
 st.latex(r'''\begin{equation}
