@@ -118,8 +118,8 @@ st.markdown('''We plotted a boxplot of the ESG scores for each dimension to see 
 scores.
 ''')
 
-df1 = pd.read_csv(".\\input\\shares.csv")
-df2 = pd.read_excel(".\\input\\ESG.xlsx")
+df1 = pd.read_csv(".//input//shares.csv")
+df2 = pd.read_excel(".//input//ESG.xlsx")
 df = df1.join(df2, on = 'id',how = 'inner',rsuffix = '_hh')
 
 df3 = df[['ESG管理实践得分\n[交易日期] 2023-05-11', 'ESG争议事件得分\n[交易日期] 2023-05-11', \
