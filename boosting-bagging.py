@@ -50,7 +50,7 @@ st.latex(r'''
 \hline \text { Self-organizing map } & 0.69 & 0.70 & 0.69 & 0.70 \\
 \hline
 \end{array}
-\end{equation
+\end{equation}
 ''')
 
 
