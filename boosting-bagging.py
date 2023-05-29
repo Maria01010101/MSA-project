@@ -31,7 +31,7 @@ epoches are shown as below:
 23
 ''')
 
-image = Image.open('c://Users//16539//Documents//SUSTech//COURSES//2023-Spring//多元//input//loss.png')
+image = Image.open('.//input//loss.png')
 st.image(image, caption='loss')
 
 st.markdown(''' 
@@ -58,7 +58,7 @@ st.markdown('''
 The clustering results obtained using the SOM method are shown in the figure below. The output grid size is calculated by the empirical formula $\sqrt{5\times \sqrt{N}}$, and N is the sample size
 ''')
 
-image = Image.open('c://Users//16539//Documents//SUSTech//COURSES//2023-Spring//多元//input//som classification.png')
+image = Image.open('.//input//som classification.png')
 st.image(image, caption='SOM')
 
 
