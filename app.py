@@ -9,7 +9,7 @@ from matplotlib import rcParams
 from PIL import Image
 
 
-rcParams['font.family'] = 'Microsoft YaHei'
+rcParams['font.family'] = 'Heiti TC'
 
 add_page_title()
 
