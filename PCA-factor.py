@@ -154,7 +154,7 @@ st.latex(r'''\begin{equation}
 \end{equation}''')
 
 
-image = Image.open('c://Users//16539//Documents//SUSTech//COURSES//2023-Spring//多元//input//pca.png')
+image = Image.open('.//pca.png')
 st.image(image, caption='pca')
 
 st.latex(r'''\begin{equation}
