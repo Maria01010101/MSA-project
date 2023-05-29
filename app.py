@@ -157,9 +157,9 @@ def zscore_normalize(data):
     return X_norm
 
 
-stock=pd.read_excel('.\\input\\股票数据.xlsx')
-esg_wind_sz=pd.read_excel(r'.\\input\\深股1.xlsx')
-esg_wind_sh=pd.read_excel(r'.\\input\\上股1.xlsx')
+stock=pd.read_excel('.//input//股票数据.xlsx')
+esg_wind_sz=pd.read_excel(r'.//input//深股1.xlsx')
+esg_wind_sh=pd.read_excel(r'.//input//上股1.xlsx')
 
 #合并深股上股
 esg_wind=pd.concat([esg_wind_sz,esg_wind_sh],axis=0)
