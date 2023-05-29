@@ -10,10 +10,9 @@ from urllib.request import urlretrieve
 import time
 import csv
 import numpy as np
-
+import random
 
 def get_ua():
-    import random
     user_agents = [
         'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 OPR/26.0.1656.60',
         'Opera/8.0 (Windows NT 5.1; U; en)',
